@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+*.zip
+
+# Material de trabajo: originales, borradores y copias. Se queda en el ordenador.
+material/
+_no-publicar/

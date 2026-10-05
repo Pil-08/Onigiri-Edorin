@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#16141a">
+  <title>Onigiri Edorin · Onigiris, sushi y ramen en Donostia</title>
+  <meta name="description" content="Onigiris y sushi preparados cada día y ramen coreano que te haces al momento. Reina Regente 4, Donostia. Abierto todos los días de 11:00 a 22:00.">
+
+  <!-- Open Graph: cambiar a URL absoluta cuando haya dominio -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Onigiri Edorin · Onigiris, sushi y ramen en Donostia">
+  <meta property="og:description" content="Onigiris y sushi preparados cada día y ramen coreano al momento. Reina Regente 4, frente al Victoria Eugenia.">
+  <meta property="og:image" content="assets/images/og-onigiri-edorin.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="eu_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Tipografías autoalojadas (OFL): M PLUS Rounded 1c y Plus Jakarta Sans -->
+  <link rel="preload" href="assets/fonts/mplus-rounded-1c-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" imagesrcset="assets/images/tienda-vitrina-800.avif 800w, assets/images/tienda-vitrina-1280.avif 1280w, assets/images/tienda-vitrina-1920.avif 1920w" imagesizes="(max-aspect-ratio: 3/2) 150vh, 100vw" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Onigiri Edorin",
+    "description": "Onigiris, sushi y ramen coreano para llevar en el centro de Donostia.",
+    "servesCuisine": ["Japonesa", "Coreana"],
+    "image": "assets/images/og-onigiri-edorin.jpg",
+    "priceRange": "€",
+    "hasMap": "https://maps.google.com/?cid=5007566800121330815",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Erregina Erregeordea kalea, 4",
+      "addressLocality": "Donostia / San Sebastián",
+      "addressRegion": "Gipuzkoa",
+      "postalCode": "20003",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 43.3231737, "longitude": -1.9815493 },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "11:00",
+      "closes": "22:00"
+    }],
+    "sameAs": ["https://www.instagram.com/onigiriedorin_donostia/",
+      "https://glovoapp.com/es/es/donostia-san-sebastian/stores/edorin-onigiri-donostia-san-sebastian"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+
+  <!-- Logo vectorial de Onigiri Edorin (capas reutilizables) -->
+  <svg class="og-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <g id="og-mark">
+        <path style="fill:var(--og-rice,#fff);stroke:var(--og-ink,#17151a);stroke-width:9.5;stroke-linejoin:round" d="M120 28.5C138 28.5 149 38 158 52C171 72 185 97 193 115C200 131 202 145 198 155C194 165 184 169 168 169H72C56 169 46 165 42 155C38 145 40 131 47 115C55 97 69 72 82 52C91 38 102 28.5 120 28.5Z"/>
+        <path style="fill:var(--og-ink,#17151a)" d="M91.5 174V126.5Q91.5 120 98 120H142Q148.5 120 148.5 126.5V174Z"/>
+        <g class="og-ojos" style="fill:var(--og-ink,#17151a)"><ellipse cx="97" cy="93" rx="6" ry="7"/><ellipse cx="143" cy="93" rx="6" ry="7"/><g style="fill:var(--og-rice,#fff)"><circle cx="95" cy="90.4" r="2.1"/><circle cx="141" cy="90.4" r="2.1"/></g></g>
+        <path style="fill:none;stroke:var(--og-ink,#17151a);stroke-width:3.6;stroke-linecap:round" d="M112.5 92.5Q120 101.5 127.5 92.5"/>
+        <path style="fill:none;stroke:var(--og-ink,#17151a);stroke-width:2.5;stroke-linecap:round" d="M76 111.5l3-6.5M81.5 111.5l3-6.5M87 111.5l3-6.5M150 111.5l3-6.5M155.5 111.5l3-6.5M161 111.5l3-6.5"/>
+      </g>
+      <g id="og-icon">
+        <use href="#og-mark"/>
+        <path style="fill:none;stroke:var(--og-accent,#17151a);stroke-width:4.2;stroke-linecap:round" d="M175.5 40.5 178 29.5M183.5 47.5 192.5 40M188.5 57.5 199 55.5"/>
+        <rect style="fill:var(--og-tag,#fff);stroke:var(--og-ink,#17151a);stroke-width:4.2" x="213" y="81" width="39" height="84" rx="11"/><g style="fill:var(--og-ink,#17151a)"><path transform="translate(222.95 104.16) scale(0.02)" d="M143 9 123 -19Q109 -38 113 -61Q117 -84 136 -97L605 -419V-421Q605 -422 604 -422H222Q199 -422 182.5 -438.5Q166 -455 166 -478V-502Q166 -525 182.5 -541.5Q199 -558 222 -558H767Q790 -558 806.5 -541.5Q823 -525 823 -502V-457Q823 -399 777 -367L626 -261V-260H628H629Q671 -260 692 -170Q704 -121 719.5 -108.5Q735 -96 781 -96Q812 -96 840 -100Q863 -103 882.5 -90.5Q902 -78 906 -56L911 -31Q916 -8 902.5 12Q889 32 866 36Q803 45 764 45Q668 45 620 16Q572 -13 556 -78Q545 -125 533.5 -142.5Q522 -160 506 -160Q490 -160 452 -135.5Q414 -111 222 23Q202 36 179.5 32Q157 28 143 9ZM326 -786Q512 -765 690 -762Q713 -761 730 -744.5Q747 -728 747 -705V-678Q747 -655 730.5 -638Q714 -621 691 -622Q512 -627 308 -650Q285 -653 270.5 -671.5Q256 -690 259 -713L262 -737Q265 -760 284 -774Q303 -788 326 -786Z"/><path transform="translate(222.85 122.07) scale(0.02)" d="M642 -784Q663 -795 686 -788Q709 -781 720 -760Q731 -740 753 -698Q763 -677 755 -655Q747 -633 726 -623Q704 -613 682 -621Q660 -629 649 -650Q644 -659 617 -709Q606 -729 613 -751Q620 -773 641 -784ZM880 -796Q913 -733 914 -731Q925 -710 917.5 -688Q910 -666 889 -656L886 -654Q865 -644 842.5 -651.5Q820 -659 809 -680Q804 -690 793 -711Q782 -732 776 -742Q765 -762 771.5 -785Q778 -808 799 -818L802 -819Q823 -830 846 -823.5Q869 -817 880 -796ZM487 65Q115 65 115 -177Q115 -305 273 -398Q279 -401 275 -409Q272 -414 268 -426Q232 -581 211 -697Q207 -720 221 -739Q235 -758 258 -762L311 -770Q334 -774 353 -760Q372 -746 377 -723Q399 -602 430 -478Q432 -469 440 -473Q564 -518 745 -561Q767 -566 786.5 -553.5Q806 -541 811 -518L818 -484Q823 -461 810 -441Q797 -421 774 -416Q586 -372 475.5 -330.5Q365 -289 325 -253.5Q285 -218 285 -177Q285 -128 332.5 -104Q380 -80 487 -80Q624 -80 763 -100Q786 -103 804 -89Q822 -75 825 -52L829 -20Q832 4 817.5 23Q803 42 779 45Q638 65 487 65Z"/><path transform="translate(222.84 138.14) scale(0.02)" d="M223 -258Q200 -258 183 -275Q166 -292 166 -315V-710Q166 -733 183 -750Q200 -767 223 -767H267Q290 -767 306.5 -750.5Q323 -734 323 -711V-600Q323 -599 324 -599Q325 -599 325 -600Q432 -747 592 -747Q720 -747 795 -659Q870 -571 870 -412Q870 -176 741 -62Q612 52 332 62Q308 63 291 47Q274 31 272 7L270 -25Q269 -48 285 -65Q301 -82 324 -83Q534 -90 617 -165Q700 -240 700 -412Q700 -593 575 -593Q487 -593 414.5 -514.5Q342 -436 324 -315Q320 -291 302.5 -274.5Q285 -258 262 -258Z"/><path transform="translate(222.9 155.71) scale(0.02)" d="M127 32Q105 24 95 3.5Q85 -17 93 -39Q281 -520 372 -750Q381 -772 403 -782.5Q425 -793 448 -786L486 -775Q508 -769 517.5 -748.5Q527 -728 519 -707Q459 -557 408 -425Q408 -423 409 -423H411Q463 -452 500 -452Q566 -452 602.5 -403Q639 -354 654 -234Q663 -160 675 -135Q687 -110 706 -110Q751 -110 798 -264Q805 -286 825 -297.5Q845 -309 868 -303L898 -295Q921 -289 933 -268Q945 -247 938 -225Q893 -72 838 -12.5Q783 47 702 47Q617 47 570.5 -5Q524 -57 505 -183Q495 -248 483 -272Q471 -296 452 -296Q411 -296 362 -229Q313 -162 239 11Q229 33 207 43Q185 53 163 45Z"/></g><g style="fill:var(--og-accent,#17151a)"><circle cx="249" cy="157.07" r="3.04"/><circle cx="252.26" cy="159.44" r="3.04"/><circle cx="251.02" cy="163.28" r="3.04"/><circle cx="246.98" cy="163.28" r="3.04"/><circle cx="245.74" cy="159.44" r="3.04"/></g><circle style="fill:var(--og-tag,#fff)" cx="249" cy="160.5" r="1.32"/>
+      </g>
+      <g id="og-lockup">
+        <use href="#og-icon"/>
+        <g style="fill:var(--og-word,#17151a)"><path transform="translate(5.19 228) scale(0.06)" d="M367.5 -380Q343 -417 293 -417Q243 -417 218.5 -380Q194 -343 194 -260Q194 -177 218.5 -140Q243 -103 293 -103Q343 -103 367.5 -140Q392 -177 392 -260Q392 -343 367.5 -380ZM486 -61Q417 10 293 10Q169 10 100 -61Q31 -132 31 -260Q31 -388 100 -459Q169 -530 293 -530Q417 -530 486 -459Q555 -388 555 -260Q555 -132 486 -61Z"/><path transform="translate(48.31 228) scale(0.06)" d="M122 0Q99 0 82.5 -17Q66 -34 66 -57V-463Q66 -486 82.5 -503Q99 -520 122 -520H163Q187 -520 203.5 -503.5Q220 -487 221 -463L222 -455Q222 -454 223 -454L225 -456Q290 -530 381 -530Q472 -530 512 -478.5Q552 -427 552 -303V-57Q552 -34 535.5 -17Q519 0 496 0H452Q429 0 412 -17Q395 -34 395 -57V-298Q395 -358 379 -380.5Q363 -403 321 -403Q286 -403 256.5 -374.5Q227 -346 227 -313V-57Q227 -34 210.5 -17Q194 0 171 0Z"/><path transform="translate(93.01 228) scale(0.06)" d="M148 0Q125 0 108 -17Q91 -34 91 -57V-463Q91 -486 108 -503Q125 -520 148 -520H204Q227 -520 244 -503Q261 -486 261 -463V-57Q261 -34 244 -17Q227 0 204 0ZM148 -620Q125 -620 108 -637Q91 -654 91 -677V-693Q91 -716 108 -733Q125 -750 148 -750H204Q227 -750 244 -733Q261 -716 261 -693V-677Q261 -654 244 -637Q227 -620 204 -620Z"/><path transform="translate(122.45 228) scale(0.06)" d="M289 -410Q194 -410 194 -270Q194 -200 219.5 -165Q245 -130 289 -130Q328 -130 356 -156.5Q384 -183 384 -218V-315Q384 -355 356 -382.5Q328 -410 289 -410ZM236 -10Q149 -10 92.5 -79.5Q36 -149 36 -270Q36 -394 90 -462Q144 -530 236 -530Q324 -530 387 -456L389 -454Q390 -454 390 -455V-463Q391 -487 408 -503.5Q425 -520 449 -520H486Q509 -520 526 -503Q543 -486 543 -463V-45Q543 90 468.5 160Q394 230 253 230Q193 230 145 222Q121 218 105 198Q89 178 89 153V133Q89 113 106 101Q123 89 143 94Q197 107 246 107Q318 107 351 72.5Q384 38 384 -43V-71Q384 -72 383 -72Q382 -72 381 -71Q324 -10 236 -10Z"/><path transform="translate(166.91 228) scale(0.06)" d="M148 0Q125 0 108 -17Q91 -34 91 -57V-463Q91 -486 108 -503Q125 -520 148 -520H204Q227 -520 244 -503Q261 -486 261 -463V-57Q261 -34 244 -17Q227 0 204 0ZM148 -620Q125 -620 108 -637Q91 -654 91 -677V-693Q91 -716 108 -733Q125 -750 148 -750H204Q227 -750 244 -733Q261 -716 261 -693V-677Q261 -654 244 -637Q227 -620 204 -620Z"/><path transform="translate(196.35 228) scale(0.06)" d="M122 0Q99 0 82.5 -17Q66 -34 66 -57V-463Q66 -486 82.5 -503Q99 -520 122 -520H171Q194 -520 210.5 -503Q227 -486 227 -463V-421Q227 -420 228 -420Q230 -420 230 -421Q292 -504 403 -518Q426 -521 442.5 -504Q459 -487 459 -463V-455Q459 -432 442.5 -415Q426 -398 402 -396Q321 -387 276.5 -340.5Q232 -294 232 -220V-57Q232 -34 215.5 -17Q199 0 176 0Z"/><path transform="translate(234.73 228) scale(0.06)" d="M148 0Q125 0 108 -17Q91 -34 91 -57V-463Q91 -486 108 -503Q125 -520 148 -520H204Q227 -520 244 -503Q261 -486 261 -463V-57Q261 -34 244 -17Q227 0 204 0ZM148 -620Q125 -620 108 -637Q91 -654 91 -677V-693Q91 -716 108 -733Q125 -750 148 -750H204Q227 -750 244 -733Q261 -716 261 -693V-677Q261 -654 244 -637Q227 -620 204 -620Z"/><path transform="translate(84.2 266.51) scale(0.02)" d="M143 9 123 -19Q109 -38 113 -61Q117 -84 136 -97L605 -419V-421Q605 -422 604 -422H222Q199 -422 182.5 -438.5Q166 -455 166 -478V-502Q166 -525 182.5 -541.5Q199 -558 222 -558H767Q790 -558 806.5 -541.5Q823 -525 823 -502V-457Q823 -399 777 -367L626 -261V-260H628H629Q671 -260 692 -170Q704 -121 719.5 -108.5Q735 -96 781 -96Q812 -96 840 -100Q863 -103 882.5 -90.5Q902 -78 906 -56L911 -31Q916 -8 902.5 12Q889 32 866 36Q803 45 764 45Q668 45 620 16Q572 -13 556 -78Q545 -125 533.5 -142.5Q522 -160 506 -160Q490 -160 452 -135.5Q414 -111 222 23Q202 36 179.5 32Q157 28 143 9ZM326 -786Q512 -765 690 -762Q713 -761 730 -744.5Q747 -728 747 -705V-678Q747 -655 730.5 -638Q714 -621 691 -622Q512 -627 308 -650Q285 -653 270.5 -671.5Q256 -690 259 -713L262 -737Q265 -760 284 -774Q303 -788 326 -786Z"/><path transform="translate(107.57 266.51) scale(0.02)" d="M642 -784Q663 -795 686 -788Q709 -781 720 -760Q731 -740 753 -698Q763 -677 755 -655Q747 -633 726 -623Q704 -613 682 -621Q660 -629 649 -650Q644 -659 617 -709Q606 -729 613 -751Q620 -773 641 -784ZM880 -796Q913 -733 914 -731Q925 -710 917.5 -688Q910 -666 889 -656L886 -654Q865 -644 842.5 -651.5Q820 -659 809 -680Q804 -690 793 -711Q782 -732 776 -742Q765 -762 771.5 -785Q778 -808 799 -818L802 -819Q823 -830 846 -823.5Q869 -817 880 -796ZM487 65Q115 65 115 -177Q115 -305 273 -398Q279 -401 275 -409Q272 -414 268 -426Q232 -581 211 -697Q207 -720 221 -739Q235 -758 258 -762L311 -770Q334 -774 353 -760Q372 -746 377 -723Q399 -602 430 -478Q432 -469 440 -473Q564 -518 745 -561Q767 -566 786.5 -553.5Q806 -541 811 -518L818 -484Q823 -461 810 -441Q797 -421 774 -416Q586 -372 475.5 -330.5Q365 -289 325 -253.5Q285 -218 285 -177Q285 -128 332.5 -104Q380 -80 487 -80Q624 -80 763 -100Q786 -103 804 -89Q822 -75 825 -52L829 -20Q832 4 817.5 23Q803 42 779 45Q638 65 487 65Z"/><path transform="translate(130.94 266.51) scale(0.02)" d="M223 -258Q200 -258 183 -275Q166 -292 166 -315V-710Q166 -733 183 -750Q200 -767 223 -767H267Q290 -767 306.5 -750.5Q323 -734 323 -711V-600Q323 -599 324 -599Q325 -599 325 -600Q432 -747 592 -747Q720 -747 795 -659Q870 -571 870 -412Q870 -176 741 -62Q612 52 332 62Q308 63 291 47Q274 31 272 7L270 -25Q269 -48 285 -65Q301 -82 324 -83Q534 -90 617 -165Q700 -240 700 -412Q700 -593 575 -593Q487 -593 414.5 -514.5Q342 -436 324 -315Q320 -291 302.5 -274.5Q285 -258 262 -258Z"/><path transform="translate(154.3 266.51) scale(0.02)" d="M127 32Q105 24 95 3.5Q85 -17 93 -39Q281 -520 372 -750Q381 -772 403 -782.5Q425 -793 448 -786L486 -775Q508 -769 517.5 -748.5Q527 -728 519 -707Q459 -557 408 -425Q408 -423 409 -423H411Q463 -452 500 -452Q566 -452 602.5 -403Q639 -354 654 -234Q663 -160 675 -135Q687 -110 706 -110Q751 -110 798 -264Q805 -286 825 -297.5Q845 -309 868 -303L898 -295Q921 -289 933 -268Q945 -247 938 -225Q893 -72 838 -12.5Q783 47 702 47Q617 47 570.5 -5Q524 -57 505 -183Q495 -248 483 -272Q471 -296 452 -296Q411 -296 362 -229Q313 -162 239 11Q229 33 207 43Q185 53 163 45Z"/><path transform="translate(48.78 270.36) scale(0.03)" d="M140 -279Q117 -279 100 -296Q83 -313 83 -336V-384Q83 -407 100 -424Q117 -441 140 -441H860Q883 -441 900 -424Q917 -407 917 -384V-336Q917 -313 900 -296Q883 -279 860 -279Z"/><path transform="translate(179.44 270.36) scale(0.03)" d="M140 -279Q117 -279 100 -296Q83 -313 83 -336V-384Q83 -407 100 -424Q117 -441 140 -441H860Q883 -441 900 -424Q917 -407 917 -384V-336Q917 -313 900 -296Q883 -279 860 -279Z"/><path transform="translate(29.36 267.71) scale(0.02)" d="M458 -262Q435 -262 418.5 -278.5Q402 -295 402 -318V-402Q402 -425 418.5 -441.5Q435 -458 458 -458H542Q565 -458 581.5 -441.5Q598 -425 598 -402V-318Q598 -295 581.5 -278.5Q565 -262 542 -262Z"/><path transform="translate(206.21 267.71) scale(0.02)" d="M458 -262Q435 -262 418.5 -278.5Q402 -295 402 -318V-402Q402 -425 418.5 -441.5Q435 -458 458 -458H542Q565 -458 581.5 -441.5Q598 -425 598 -402V-318Q598 -295 581.5 -278.5Q565 -262 542 -262Z"/></g>
+      </g>
+    </defs>
+  </svg>
+
+  <!-- ==========================================================================
+       CABECERA
+       ========================================================================== -->
+  <header class="site-nav" id="site-nav">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-brand" aria-label="Onigiri Edorin">
+        <svg class="og og-dark nav-mark" viewBox="34 20 172 160" aria-hidden="true" focusable="false"><use href="#og-mark"></use></svg>
+        <span class="nav-brand-text">
+          <span class="nav-brand-name">Onigiri Edorin</span>
+          <span class="nav-brand-tag" data-i18n="brand_tag">Onigiris · sushi · ramen</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegación principal" data-i18n-aria="nav_aria">
+        <a href="#carta" class="nav-link" data-i18n="nav_carta">Qué hay</a>
+        <a href="#tienda" class="nav-link" data-i18n="nav_tienda">La tienda</a>
+        <a href="#horario" class="nav-link" data-i18n="nav_horario">Horario</a>
+        <a href="#como-llegar" class="nav-link" data-i18n="nav_llegar">Cómo llegar</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="idiomas" role="group" aria-label="Idioma · Hizkuntza · Language">
+          <button type="button" class="lang-btn" data-lang="es" lang="es" aria-pressed="true" title="Español">ES</button>
+          <button type="button" class="lang-btn" data-lang="eu" lang="eu" aria-pressed="false" title="Euskara">EU</button>
+          <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false" title="English">EN</button>
+        </div>
+
+        <a class="nav-ig" href="https://www.instagram.com/onigiriedorin_donostia/" target="_blank" rel="noopener" aria-label="Instagram de Onigiri Edorin (se abre en otra pestaña)" data-i18n-aria="ig_aria">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle class="i-fill" cx="17.4" cy="6.6" r="1.15"/></svg>
+        </a>
+
+        <button class="menu-movil" type="button" aria-expanded="false" aria-controls="cajon">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span class="vh" data-i18n="menu_open">Abrir menú</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="cajon" id="cajon" hidden>
+    <nav class="cajon-nav" aria-label="Menú" data-i18n-aria="drawer_aria">
+      <ul class="cajon-enlaces">
+        <li><a href="#carta" data-i18n="nav_carta">Qué hay</a></li>
+        <li><a href="#tienda" data-i18n="nav_tienda">La tienda</a></li>
+        <li><a href="#horario" data-i18n="nav_horario">Horario</a></li>
+        <li><a href="#como-llegar" data-i18n="nav_llegar">Cómo llegar</a></li>
+      </ul>
+    </nav>
+
+    <div class="cajon-bloque">
+      <p class="cajon-label">Idioma · Hizkuntza · Language</p>
+      <div class="idiomas idiomas-cajon" role="group" aria-label="Idioma · Hizkuntza · Language">
+        <button type="button" class="lang-btn" data-lang="es" lang="es" aria-pressed="true">Español</button>
+        <button type="button" class="lang-btn" data-lang="eu" lang="eu" aria-pressed="false">Euskara</button>
+        <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+
+    <div class="cajon-bloque">
+      <p class="cajon-label" data-i18n="drawer_social">Síguenos y encuéntranos</p>
+      <div class="cajon-acciones">
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=ONIGIRI%20EDORIN%2C%20Erregina%20Erregeordea%20kalea%2C%204%2C%2020003%20Donostia" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11 22 2l-9 19-2-8-8-2Z"/></svg><span data-i18n="cta_llegar">Cómo llegar</span>
+        </a>
+        <a class="btn btn-ghost-dark" href="https://www.instagram.com/onigiriedorin_donostia/" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle class="i-fill" cx="17.4" cy="6.6" r="1.15"/></svg><span>Instagram</span>
+        </a>
+        <a class="btn btn-ghost-dark" href="https://maps.google.com/?cid=5007566800121330815" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>Google Maps</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <!-- ==========================================================================
+         INICIO: fotos de la tienda de fondo, logo y nombre en el centro
+         ========================================================================== -->
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-fotos" aria-hidden="true">
+        <div class="hero-foto is-activa" style="--pos: 50% 50%">
+          <picture>
+            <source type="image/avif" srcset="assets/images/tienda-vitrina-800.avif 800w, assets/images/tienda-vitrina-1280.avif 1280w, assets/images/tienda-vitrina-1920.avif 1920w" sizes="(max-aspect-ratio: 3/2) 150vh, 100vw">
+            <source type="image/webp" srcset="assets/images/tienda-vitrina-800.webp 800w, assets/images/tienda-vitrina-1280.webp 1280w, assets/images/tienda-vitrina-1920.webp 1920w" sizes="(max-aspect-ratio: 3/2) 150vh, 100vw">
+            <img src="assets/images/tienda-vitrina-1280.jpg" alt="" width="1920" height="1280" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+        <div class="hero-foto" style="--pos: 50% 30%">
+          <picture>
+            <source type="image/avif" data-srcset="assets/images/fachada-calle-720.avif 720w, assets/images/fachada-calle-1080.avif 1080w, assets/images/fachada-calle-1600.avif 1600w" sizes="(max-aspect-ratio: 2/3) 67vh, 100vw">
+            <source type="image/webp" data-srcset="assets/images/fachada-calle-720.webp 720w, assets/images/fachada-calle-1080.webp 1080w, assets/images/fachada-calle-1600.webp 1600w" sizes="(max-aspect-ratio: 2/3) 67vh, 100vw">
+            <img data-src="assets/images/fachada-calle-1080.jpg" alt="" width="1600" height="2400" decoding="async">
+          </picture>
+        </div>
+        <div class="hero-foto" style="--pos: 50% 46%">
+          <picture>
+            <source type="image/avif" data-srcset="assets/images/sushi-nigiri-540.avif 540w, assets/images/sushi-nigiri-1080.avif 1080w" sizes="(max-aspect-ratio: 4/5) 80vh, 100vw">
+            <source type="image/webp" data-srcset="assets/images/sushi-nigiri-540.webp 540w, assets/images/sushi-nigiri-1080.webp 1080w" sizes="(max-aspect-ratio: 4/5) 80vh, 100vw">
+            <img data-src="assets/images/sushi-nigiri-1080.jpg" alt="" width="1080" height="1350" decoding="async">
+          </picture>
+        </div>
+        <div class="hero-foto" style="--pos: 64% 34%">
+          <picture>
+            <source type="image/avif" data-srcset="assets/images/mostrador-edorin-540.avif 540w, assets/images/mostrador-edorin-1080.avif 1080w" sizes="(max-aspect-ratio: 9/20) 45vh, 100vw">
+            <source type="image/webp" data-srcset="assets/images/mostrador-edorin-540.webp 540w, assets/images/mostrador-edorin-1080.webp 1080w" sizes="(max-aspect-ratio: 9/20) 45vh, 100vw">
+            <img data-src="assets/images/mostrador-edorin-1080.jpg" alt="" width="1080" height="2400" decoding="async">
+          </picture>
+        </div>
+        <div class="hero-foto" style="--pos: 50% 42%">
+          <picture>
+            <source type="image/avif" data-srcset="assets/images/inari-vitrina-540.avif 540w, assets/images/inari-vitrina-1080.avif 1080w" sizes="(max-aspect-ratio: 9/20) 45vh, 100vw">
+            <source type="image/webp" data-srcset="assets/images/inari-vitrina-540.webp 540w, assets/images/inari-vitrina-1080.webp 1080w" sizes="(max-aspect-ratio: 9/20) 45vh, 100vw">
+            <img data-src="assets/images/inari-vitrina-1080.jpg" alt="" width="1080" height="2400" decoding="async">
+          </picture>
+        </div>
+        <div class="hero-foto" style="--pos: 50% 30%">
+          <picture>
+            <source type="image/avif" data-srcset="assets/images/fachada-rotulo-720.avif 720w, assets/images/fachada-rotulo-1080.avif 1080w, assets/images/fachada-rotulo-1600.avif 1600w" sizes="(max-aspect-ratio: 3/4) 75vh, 100vw">
+            <source type="image/webp" data-srcset="assets/images/fachada-rotulo-720.webp 720w, assets/images/fachada-rotulo-1080.webp 1080w, assets/images/fachada-rotulo-1600.webp 1600w" sizes="(max-aspect-ratio: 3/4) 75vh, 100vw">
+            <img data-src="assets/images/fachada-rotulo-1080.jpg" alt="" width="1600" height="2133" decoding="async">
+          </picture>
+        </div>
+      </div>
+      <div class="hero-velo" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="hero-badge">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="hero_badge">Reina Regente 4 · Donostia</span>
+        </p>
+
+        <!-- Logo animado: el onigiri salta. Al pulsarlo da una voltereta. -->
+        <button type="button" class="emblema" id="emblema" aria-label="Onigiri Edorin: pulsa el onigiri para que salte" data-i18n-aria="emblem_aria">
+          <svg class="og og-dark emblema-svg" viewBox="28 12 240 182" aria-hidden="true" focusable="false">
+            <ellipse class="em-sombra" cx="120" cy="181" rx="56" ry="5.5"/>
+            <g class="em-etiqueta"><rect style="fill:var(--og-tag,#fff);stroke:var(--og-ink,#17151a);stroke-width:4.2" x="213" y="81" width="39" height="84" rx="11"/><g style="fill:var(--og-ink,#17151a)"><path transform="translate(222.95 104.16) scale(0.02)" d="M143 9 123 -19Q109 -38 113 -61Q117 -84 136 -97L605 -419V-421Q605 -422 604 -422H222Q199 -422 182.5 -438.5Q166 -455 166 -478V-502Q166 -525 182.5 -541.5Q199 -558 222 -558H767Q790 -558 806.5 -541.5Q823 -525 823 -502V-457Q823 -399 777 -367L626 -261V-260H628H629Q671 -260 692 -170Q704 -121 719.5 -108.5Q735 -96 781 -96Q812 -96 840 -100Q863 -103 882.5 -90.5Q902 -78 906 -56L911 -31Q916 -8 902.5 12Q889 32 866 36Q803 45 764 45Q668 45 620 16Q572 -13 556 -78Q545 -125 533.5 -142.5Q522 -160 506 -160Q490 -160 452 -135.5Q414 -111 222 23Q202 36 179.5 32Q157 28 143 9ZM326 -786Q512 -765 690 -762Q713 -761 730 -744.5Q747 -728 747 -705V-678Q747 -655 730.5 -638Q714 -621 691 -622Q512 -627 308 -650Q285 -653 270.5 -671.5Q256 -690 259 -713L262 -737Q265 -760 284 -774Q303 -788 326 -786Z"/><path transform="translate(222.85 122.07) scale(0.02)" d="M642 -784Q663 -795 686 -788Q709 -781 720 -760Q731 -740 753 -698Q763 -677 755 -655Q747 -633 726 -623Q704 -613 682 -621Q660 -629 649 -650Q644 -659 617 -709Q606 -729 613 -751Q620 -773 641 -784ZM880 -796Q913 -733 914 -731Q925 -710 917.5 -688Q910 -666 889 -656L886 -654Q865 -644 842.5 -651.5Q820 -659 809 -680Q804 -690 793 -711Q782 -732 776 -742Q765 -762 771.5 -785Q778 -808 799 -818L802 -819Q823 -830 846 -823.5Q869 -817 880 -796ZM487 65Q115 65 115 -177Q115 -305 273 -398Q279 -401 275 -409Q272 -414 268 -426Q232 -581 211 -697Q207 -720 221 -739Q235 -758 258 -762L311 -770Q334 -774 353 -760Q372 -746 377 -723Q399 -602 430 -478Q432 -469 440 -473Q564 -518 745 -561Q767 -566 786.5 -553.5Q806 -541 811 -518L818 -484Q823 -461 810 -441Q797 -421 774 -416Q586 -372 475.5 -330.5Q365 -289 325 -253.5Q285 -218 285 -177Q285 -128 332.5 -104Q380 -80 487 -80Q624 -80 763 -100Q786 -103 804 -89Q822 -75 825 -52L829 -20Q832 4 817.5 23Q803 42 779 45Q638 65 487 65Z"/><path transform="translate(222.84 138.14) scale(0.02)" d="M223 -258Q200 -258 183 -275Q166 -292 166 -315V-710Q166 -733 183 -750Q200 -767 223 -767H267Q290 -767 306.5 -750.5Q323 -734 323 -711V-600Q323 -599 324 -599Q325 -599 325 -600Q432 -747 592 -747Q720 -747 795 -659Q870 -571 870 -412Q870 -176 741 -62Q612 52 332 62Q308 63 291 47Q274 31 272 7L270 -25Q269 -48 285 -65Q301 -82 324 -83Q534 -90 617 -165Q700 -240 700 -412Q700 -593 575 -593Q487 -593 414.5 -514.5Q342 -436 324 -315Q320 -291 302.5 -274.5Q285 -258 262 -258Z"/><path transform="translate(222.9 155.71) scale(0.02)" d="M127 32Q105 24 95 3.5Q85 -17 93 -39Q281 -520 372 -750Q381 -772 403 -782.5Q425 -793 448 -786L486 -775Q508 -769 517.5 -748.5Q527 -728 519 -707Q459 -557 408 -425Q408 -423 409 -423H411Q463 -452 500 -452Q566 -452 602.5 -403Q639 -354 654 -234Q663 -160 675 -135Q687 -110 706 -110Q751 -110 798 -264Q805 -286 825 -297.5Q845 -309 868 -303L898 -295Q921 -289 933 -268Q945 -247 938 -225Q893 -72 838 -12.5Q783 47 702 47Q617 47 570.5 -5Q524 -57 505 -183Q495 -248 483 -272Q471 -296 452 -296Q411 -296 362 -229Q313 -162 239 11Q229 33 207 43Q185 53 163 45Z"/></g><g style="fill:var(--og-accent,#17151a)"><circle cx="249" cy="157.07" r="3.04"/><circle cx="252.26" cy="159.44" r="3.04"/><circle cx="251.02" cy="163.28" r="3.04"/><circle cx="246.98" cy="163.28" r="3.04"/><circle cx="245.74" cy="159.44" r="3.04"/></g><circle style="fill:var(--og-tag,#fff)" cx="249" cy="160.5" r="1.32"/></g>
+            <g class="em-salto">
+              <g class="em-giro">
+                <path style="fill:var(--og-rice,#fff);stroke:var(--og-ink,#17151a);stroke-width:9.5;stroke-linejoin:round" d="M120 28.5C138 28.5 149 38 158 52C171 72 185 97 193 115C200 131 202 145 198 155C194 165 184 169 168 169H72C56 169 46 165 42 155C38 145 40 131 47 115C55 97 69 72 82 52C91 38 102 28.5 120 28.5Z"/>
+                <path style="fill:var(--og-ink,#17151a)" d="M91.5 174V126.5Q91.5 120 98 120H142Q148.5 120 148.5 126.5V174Z"/>
+                <g class="em-ojos" style="fill:var(--og-ink,#17151a)"><ellipse cx="97" cy="93" rx="6" ry="7"/><ellipse cx="143" cy="93" rx="6" ry="7"/><g style="fill:var(--og-rice,#fff)"><circle cx="95" cy="90.4" r="2.1"/><circle cx="141" cy="90.4" r="2.1"/></g></g>
+                <path style="fill:none;stroke:var(--og-ink,#17151a);stroke-width:3.6;stroke-linecap:round" d="M112.5 92.5Q120 101.5 127.5 92.5"/>
+                <path style="fill:none;stroke:var(--og-ink,#17151a);stroke-width:2.5;stroke-linecap:round" d="M76 111.5l3-6.5M81.5 111.5l3-6.5M87 111.5l3-6.5M150 111.5l3-6.5M155.5 111.5l3-6.5M161 111.5l3-6.5"/>
+                <g class="em-ojos-felices" style="fill:none;stroke:var(--og-ink,#17151a);stroke-width:4.2;stroke-linecap:round"><path d="M91 96.5Q97 88 103 96.5"/><path d="M137 96.5Q143 88 149 96.5"/></g>
+              </g>
+            </g>
+            <g class="em-marcas"><path style="fill:none;stroke:var(--og-accent,#17151a);stroke-width:4.2;stroke-linecap:round" d="M175.5 40.5 178 29.5M183.5 47.5 192.5 40M188.5 57.5 199 55.5"/></g>
+          </svg>
+        </button>
+
+        <h1 class="hero-title" id="hero-title">Onigiri <span>Edorin</span></h1>
+        <p class="hero-cat" data-i18n="hero_cat">Onigiris, sushi y ramen</p>
+        <p class="hero-desc" data-i18n="hero_desc">Onigiris y sushi preparados cada día, y ramen coreano que te haces al momento. En el centro de Donostia, frente al Victoria Eugenia.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=ONIGIRI%20EDORIN%2C%20Erregina%20Erregeordea%20kalea%2C%204%2C%2020003%20Donostia" target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11 22 2l-9 19-2-8-8-2Z"/></svg><span data-i18n="cta_llegar">Cómo llegar</span>
+          </a>
+          <a class="btn btn-ghost-dark" href="https://glovoapp.com/es/es/donostia-san-sebastian/stores/edorin-onigiri-donostia-san-sebastian" target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg><span data-i18n="cta_glovo">Pedir por Glovo</span>
+          </a>
+          <a class="btn btn-ghost-dark" href="https://www.instagram.com/onigiriedorin_donostia/" target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle class="i-fill" cx="17.4" cy="6.6" r="1.15"/></svg><span data-i18n="cta_ig">Ver Instagram</span>
+          </a>
+        </div>
+
+        <p class="hero-estado" aria-live="polite">
+          <span class="live-dot" id="liveDot" aria-hidden="true"></span>
+          <span id="liveTxt" data-i18n="status_checking">Comprobando horario…</span>
+        </p>
+
+        <ul class="hero-datos">
+          <li class="dato">
+            <a class="dato-link" href="https://maps.google.com/?cid=5007566800121330815" target="_blank" rel="noopener">
+              <span class="dato-val"><span data-i18n="kpi1_v">4,5</span><svg class="i i-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.53 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.76a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.4 21.01a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.16 9.8a.53.53 0 0 1 .29-.9l5.17-.76a2.12 2.12 0 0 0 1.6-1.16z"/></svg></span>
+              <span class="dato-lbl" data-i18n="kpi1_l">en Google</span>
+            </a>
+          </li>
+          <li class="dato">
+            <span class="dato-val" data-i18n="kpi2_v">11:00–22:00</span>
+            <span class="dato-lbl" data-i18n="kpi2_l">todos los días</span>
+          </li>
+          <li class="dato">
+            <span class="dato-val" data-i18n="kpi3_v">Fresco</span>
+            <span class="dato-lbl" data-i18n="kpi3_l">hecho cada día</span>
+          </li>
+          <li class="dato">
+            <span class="dato-val" data-i18n="kpi4_v">Centro</span>
+            <span class="dato-lbl" data-i18n="kpi4_l">frente al Victoria Eugenia</span>
+          </li>
+        </ul>
+
+        <div class="hero-controles">
+          <ol class="hero-puntos" aria-hidden="true">
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          </ol>
+          <button type="button" class="hero-pausa" id="heroPausa" aria-label="Pausar las fotos" data-i18n-aria="fotos_pause" hidden>
+            <svg class="i-pausa" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6.5" y="5" width="3.6" height="14" rx="1"/><rect x="13.9" y="5" width="3.6" height="14" rx="1"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5.2v13.6a.8.8 0 0 0 1.2.7l10.6-6.8a.8.8 0 0 0 0-1.4L9.2 4.5A.8.8 0 0 0 8 5.2Z"/></svg>
+            <span class="hero-pausa-txt" data-i18n="fotos_play">Activar el movimiento</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         QUÉ HAY
+         ========================================================================== -->
+    <section id="carta" class="seccion" aria-labelledby="carta-title">
+      <div class="container">
+        <header class="sec-head">
+          <p class="eyebrow" data-i18n="carta_eyebrow">Qué encontrarás</p>
+          <h2 class="sec-title" id="carta-title" data-i18n="carta_title">Eliges en la vitrina y te lo llevas</h2>
+          <p class="sec-desc" data-i18n="carta_desc">Onigiris y sushi recién hechos, ramen que preparas tú en nuestra máquina y bebidas para acompañar. Todo listo para llevar.</p>
+        </header>
+
+        <ul class="bento">
+          <li class="bento-item bento-xl">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/prod-onigiri-420.avif 420w, assets/images/prod-onigiri-583.avif 583w" sizes="(min-width: 900px) 580px, calc(100vw - 32px)">
+                <source type="image/webp" srcset="assets/images/prod-onigiri-420.webp 420w, assets/images/prod-onigiri-583.webp 583w" sizes="(min-width: 900px) 580px, calc(100vw - 32px)">
+                <img src="assets/images/prod-onigiri-583.jpg" alt="Manos con guantes dando forma a un onigiri relleno de salmón" data-i18n-alt="alt_onigiri" width="583" height="669" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_onigiri_t">Onigiris</h3>
+                <p class="plato-desc" data-i18n="p_onigiri_d">Hechos a mano cada día. También hay opciones veganas.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/sushi-nigiri-540.avif 540w, assets/images/sushi-nigiri-1080.avif 1080w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <source type="image/webp" srcset="assets/images/sushi-nigiri-540.webp 540w, assets/images/sushi-nigiri-1080.webp 1080w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <img src="assets/images/sushi-nigiri-1080.jpg" alt="Nigiri de salmón sujeto con palillos sobre una bandeja de sushi variado" data-i18n-alt="alt_sushi" width="1080" height="1350" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_sushi_t">Sushi</h3>
+                <p class="plato-desc" data-i18n="p_sushi_d">Nigiris, makis y bandejas surtidas.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/prod-sashimi-420.avif 420w, assets/images/prod-sashimi-639.avif 639w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <source type="image/webp" srcset="assets/images/prod-sashimi-420.webp 420w, assets/images/prod-sashimi-639.webp 639w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <img src="assets/images/prod-sashimi-639.jpg" alt="Bandeja de sashimi de salmón con ensalada, cerrada y etiquetada" data-i18n-alt="alt_sashimi" width="639" height="645" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_sashimi_t">Sashimi</h3>
+                <p class="plato-desc" data-i18n="p_sashimi_d">Bandejas de salmón listas para llevar.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/prod-takoyaki-420.avif 420w, assets/images/prod-takoyaki-684.avif 684w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <source type="image/webp" srcset="assets/images/prod-takoyaki-420.webp 420w, assets/images/prod-takoyaki-684.webp 684w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <img src="assets/images/prod-takoyaki-684.jpg" alt="Takoyaki con salsa y bonito seco sujeto con palillos" data-i18n-alt="alt_takoyaki" width="684" height="653" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_takoyaki_t">Takoyaki</h3>
+                <p class="plato-desc" data-i18n="p_takoyaki_d">Bolitas de pulpo con salsa y bonito seco.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/inari-bandeja-480.avif 480w, assets/images/inari-bandeja-800.avif 800w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <source type="image/webp" srcset="assets/images/inari-bandeja-480.webp 480w, assets/images/inari-bandeja-800.webp 800w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <img src="assets/images/inari-bandeja-800.jpg" alt="Bandeja de inari con wakame y maíz en la vitrina, con su cartel de precio" data-i18n-alt="alt_inari" width="800" height="1000" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_inari_t">Inari</h3>
+                <p class="plato-desc" data-i18n="p_inari_d">Saquitos de tofu dulce rellenos de arroz, con toppings variados.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item bento-ramen">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/ramen-coreano-540.avif 540w, assets/images/ramen-coreano-1080.avif 1080w" sizes="(min-width: 900px) 580px, calc(100vw - 32px)">
+                <source type="image/webp" srcset="assets/images/ramen-coreano-540.webp 540w, assets/images/ramen-coreano-1080.webp 1080w" sizes="(min-width: 900px) 580px, calc(100vw - 32px)">
+                <img src="assets/images/ramen-coreano-1080.jpg" alt="Mesa con dos ramen coreanos recién hechos, onigiris y bebidas asiáticas" data-i18n-alt="alt_ramen_coreano" width="1080" height="1350" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <p class="plato-eyebrow" data-i18n="p_ramen_e">Hazlo tú</p>
+                <h3 class="plato-nombre" data-i18n="p_ramen_t">Ramen coreano</h3>
+                <p class="plato-desc" data-i18n="p_ramen_d">Elige tu ramen y prepáralo al momento en nuestra máquina.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/prod-taiyaki-420.avif 420w, assets/images/prod-taiyaki-695.avif 695w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <source type="image/webp" srcset="assets/images/prod-taiyaki-420.webp 420w, assets/images/prod-taiyaki-695.webp 695w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <img src="assets/images/prod-taiyaki-695.jpg" alt="Taiyaki dorado con forma de pez sujeto con las manos" data-i18n-alt="alt_dulces" width="695" height="646" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_dulces_t">Dulces japoneses</h3>
+                <p class="plato-desc" data-i18n="p_dulces_d">Taiyaki y dorayaki para el antojo dulce.</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="bento-item">
+            <figure class="plato">
+              <picture>
+                <source type="image/avif" srcset="assets/images/prod-bebidas-420.avif 420w, assets/images/prod-bebidas-699.avif 699w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <source type="image/webp" srcset="assets/images/prod-bebidas-420.webp 420w, assets/images/prod-bebidas-699.webp 699w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+                <img src="assets/images/prod-bebidas-699.jpg" alt="Refrescos japoneses, una caja de galletas y dos inari sobre la mesa" data-i18n-alt="alt_bebidas" width="699" height="656" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="plato-txt">
+                <h3 class="plato-nombre" data-i18n="p_bebidas_t">Bebidas y snacks</h3>
+                <p class="plato-desc" data-i18n="p_bebidas_d">Refrescos y snacks asiáticos para acompañar.</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <p class="nota-alergenos">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M12 16.2v-4.6M12 7.9h.01"/></svg>
+          <span data-i18n="alergenos">¿Alergias o intolerancias? Pregunta en la tienda antes de comprar.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAJA SORPRESA
+         ========================================================================== -->
+    <section class="caja" aria-labelledby="caja-title">
+      <div class="container caja-inner">
+        <div>
+          <p class="caja-eyebrow" data-i18n="caja_eyebrow">Cada noche</p>
+          <h2 class="caja-title" id="caja-title" data-i18n="caja_title">Caja sorpresa desde 5,99 €</h2>
+          <p class="caja-text" data-i18n="caja_desc">A partir de las 21:30 y hasta agotar unidades. Las novedades y los sorteos los contamos en Instagram.</p>
+        </div>
+        <a class="btn btn-light" href="https://www.instagram.com/onigiriedorin_donostia/" target="_blank" rel="noopener">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle class="i-fill" cx="17.4" cy="6.6" r="1.15"/></svg><span data-i18n="caja_cta">Ver en Instagram</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LA TIENDA · CÓMO ENCONTRARNOS (formato Oasis)
+         ========================================================================== -->
+    <section id="tienda" class="find-section" aria-labelledby="tienda-title">
+      <div class="container">
+        <header class="sec-head sec-head-center">
+          <p class="eyebrow" data-i18n="tienda_eyebrow">La tienda</p>
+          <h2 class="sec-title" id="tienda-title"><span data-i18n="tienda_title_a">Rótulo blanco,</span> <em data-i18n="tienda_title_b">onigiri rosa.</em></h2>
+          <p class="sec-desc" data-i18n="tienda_desc">Estamos en pleno centro, al final del Boulevard. Así nos reconocerás desde la calle.</p>
+        </header>
+
+        <div class="tienda-fotos">
+          <figure class="tienda-foto tienda-foto-main">
+            <picture>
+              <source type="image/avif" srcset="assets/images/fachada-calle-720.avif 720w, assets/images/fachada-calle-1080.avif 1080w, assets/images/fachada-calle-1600.avif 1600w" sizes="(min-width: 900px) 580px, calc(100vw - 32px)">
+              <source type="image/webp" srcset="assets/images/fachada-calle-720.webp 720w, assets/images/fachada-calle-1080.webp 1080w, assets/images/fachada-calle-1600.webp 1600w" sizes="(min-width: 900px) 580px, calc(100vw - 32px)">
+              <img src="assets/images/fachada-calle-1080.jpg" alt="Entrada de Onigiri Edorin: arco de piedra con rótulo blanco y el onigiri rosa, con gente pasando por la acera" data-i18n-alt="alt_fachada" width="1600" height="2400" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="foto_fachada">La entrada, en Reina Regente 4</figcaption>
+          </figure>
+          <figure class="tienda-foto">
+            <picture>
+              <source type="image/avif" srcset="assets/images/tienda-vitrina-800.avif 800w, assets/images/tienda-vitrina-1280.avif 1280w, assets/images/tienda-vitrina-1920.avif 1920w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+              <source type="image/webp" srcset="assets/images/tienda-vitrina-800.webp 800w, assets/images/tienda-vitrina-1280.webp 1280w, assets/images/tienda-vitrina-1920.webp 1920w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+              <img src="assets/images/tienda-vitrina-1280.jpg" alt="Vitrina de madera con bandejas de sushi y onigiris bajo lámparas de mimbre y un neón rosa con forma de onigiri" data-i18n-alt="alt_vitrina" width="1920" height="1280" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="foto_vitrina">La vitrina</figcaption>
+          </figure>
+          <figure class="tienda-foto">
+            <picture>
+              <source type="image/avif" srcset="assets/images/mostrador-edorin-540.avif 540w, assets/images/mostrador-edorin-1080.avif 1080w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+              <source type="image/webp" srcset="assets/images/mostrador-edorin-540.webp 540w, assets/images/mostrador-edorin-1080.webp 1080w" sizes="(min-width: 900px) 290px, calc(50vw - 22px)">
+              <img src="assets/images/mostrador-edorin-1080.jpg" alt="Mostrador de madera con el neón EDORIN y lámparas de mimbre" data-i18n-alt="alt_mostrador" width="1080" height="2400" loading="lazy" decoding="async">
+            </picture>
+            <figcaption data-i18n="foto_mostrador">El mostrador</figcaption>
+          </figure>
+        </div>
+
+        <ol class="steps-grid">
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3 class="step-title" data-i18n="s1_t">Al final del Boulevard</h3>
+            <p class="step-desc" data-i18n="s1_d">En Reina Regente 4, junto al puente de Zurriola y a un paso de la Parte Vieja.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3 class="step-title" data-i18n="s2_t">Frente al Victoria Eugenia</h3>
+            <p class="step-desc" data-i18n="s2_d">El teatro queda justo enfrente. Si vienes del Kursaal, cruza el puente y ya estás.</p>
+          </li>
+          <li class="step-card">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3 class="step-title" data-i18n="s3_t">Busca el onigiri rosa</h3>
+            <p class="step-desc" data-i18n="s3_d">Rótulo blanco bajo un arco de piedra. Dentro, la vitrina de madera y los neones.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HORARIO Y DÓNDE ESTAMOS (formato Oasis)
+         ========================================================================== -->
+    <section class="info-section" id="horario" aria-labelledby="horario-title">
+      <div class="container info-grid">
+        <div>
+          <span class="eyebrow" data-i18n="h_eyebrow">Horario</span>
+          <h2 class="section-title" id="horario-title" data-i18n="h_title">Abrimos todos los días</h2>
+          <table class="hours-table">
+            <caption class="sr-only" data-i18n="h_eyebrow">Horario</caption>
+            <tbody id="hoursTableBody">
+              <tr><td>Lunes</td><td>11:00 – 22:00</td></tr>
+              <tr><td>Martes</td><td>11:00 – 22:00</td></tr>
+              <tr><td>Miércoles</td><td>11:00 – 22:00</td></tr>
+              <tr><td>Jueves</td><td>11:00 – 22:00</td></tr>
+              <tr><td>Viernes</td><td>11:00 – 22:00</td></tr>
+              <tr><td>Sábado</td><td>11:00 – 22:00</td></tr>
+              <tr><td>Domingo</td><td>11:00 – 22:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="contact-card" id="como-llegar">
+          <h2 class="contact-title" data-i18n="w_title">Dónde estamos</h2>
+
+          <div class="map-frame">
+            <iframe class="map-embed" src="https://maps.google.com/maps?q=ONIGIRI%20EDORIN%2C%20Erregina%20Erregeordea%20kalea%2C%204%2C%2020003%20Donostia&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" tabindex="-1" title="Mapa con la ubicación de Onigiri Edorin" data-i18n-title="map_title"></iframe>
+            <a class="map-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=ONIGIRI%20EDORIN%2C%20Erregina%20Erregeordea%20kalea%2C%204%2C%2020003%20Donostia" target="_blank" rel="noopener noreferrer" title="Abrir la ruta a Onigiri Edorin en Google Maps" aria-label="Abrir la ruta a Onigiri Edorin en Google Maps" data-i18n-aria="map_link" data-i18n-title="map_link"></a>
+            <span class="map-pin" aria-hidden="true">
+              <span class="map-pin-badge">
+                <svg class="og og-dark" viewBox="34 20 172 160" focusable="false"><use href="#og-mark"></use></svg>
+              </span>
+              <span class="map-pin-stem"></span>
+            </span>
+          </div>
+
+          <address class="contact-list">
+            <a class="contact-item" href="https://www.google.com/maps/dir/?api=1&amp;destination=ONIGIRI%20EDORIN%2C%20Erregina%20Erregeordea%20kalea%2C%204%2C%2020003%20Donostia" target="_blank" rel="noopener noreferrer">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><strong data-i18n="addr_1">Calle Reina Regente, 4</strong><br><span data-i18n="addr_2">20003 Donostia / San Sebastián</span></span>
+            </a>
+            <a class="contact-item" href="https://maps.google.com/?cid=5007566800121330815" target="_blank" rel="noopener noreferrer">
+              <svg class="i i-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.53 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.76a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.4 21.01a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.16 9.8a.53.53 0 0 1 .29-.9l5.17-.76a2.12 2.12 0 0 0 1.6-1.16z"/></svg>
+              <span data-i18n="c_gmaps">Ver la ficha y las reseñas en Google Maps</span>
+            </a>
+            <a class="contact-item" href="https://www.instagram.com/onigiriedorin_donostia/" target="_blank" rel="noopener noreferrer">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle class="i-fill" cx="17.4" cy="6.6" r="1.15"/></svg>
+              <span>@onigiriedorin_donostia</span>
+            </a>
+            <a class="contact-item" href="https://glovoapp.com/es/es/donostia-san-sebastian/stores/edorin-onigiri-donostia-san-sebastian" target="_blank" rel="noopener noreferrer">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+              <span data-i18n="c_glovo">Pedir a domicilio por Glovo</span>
+            </a>
+          </address>
+
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=ONIGIRI%20EDORIN%2C%20Erregina%20Erregeordea%20kalea%2C%204%2C%2020003%20Donostia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11 22 2l-9 19-2-8-8-2Z"/></svg><span data-i18n="cta_llegar">Cómo llegar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       PIE
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="footer-logo" aria-label="Onigiri Edorin · Volver arriba" data-i18n-aria="f_top">
+        <svg class="og og-dark og-lockup" viewBox="-4 16 266 262" aria-hidden="true" focusable="false"><use href="#og-lockup"></use></svg>
+      </a>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="footer-h" data-i18n="f_visit">Visítanos</p>
+          <p><span data-i18n="addr_1">Calle Reina Regente, 4</span><br><span data-i18n="addr_2">20003 Donostia / San Sebastián</span></p>
+          <p data-i18n="f_hours">Todos los días, de 11:00 a 22:00</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h" data-i18n="f_follow">Síguenos</p>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/onigiriedorin_donostia/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.2"/><circle cx="12" cy="12" r="4.3"/><circle class="i-fill" cx="17.4" cy="6.6" r="1.15"/></svg><span>Instagram</span></a></li>
+            <li><a href="https://maps.google.com/?cid=5007566800121330815" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg><span>Google Maps</span></a></li>
+            <li><a href="https://glovoapp.com/es/es/donostia-san-sebastian/stores/edorin-onigiri-donostia-san-sebastian" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg><span>Glovo</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-h">Idioma · Hizkuntza · Language</p>
+          <div class="idiomas idiomas-pie" role="group" aria-label="Idioma · Hizkuntza · Language">
+            <button type="button" class="lang-btn" data-lang="es" lang="es" aria-pressed="true">ES</button>
+            <button type="button" class="lang-btn" data-lang="eu" lang="eu" aria-pressed="false">EU</button>
+            <button type="button" class="lang-btn" data-lang="en" lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-legal">© <span id="footerYear">2026</span> Onigiri Edorin · <span data-i18n="f_rights">Onigiris, sushi y ramen en Donostia.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
