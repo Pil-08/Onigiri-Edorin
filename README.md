@@ -1,31 +1,30 @@
 # Onigiri Edorin
 
 Una web de una sola página para un local de comida japonesa y coreana de Donostia (Erregina
-Erregeordea kalea, 4). Enseña la tienda, los productos, el horario (de 11:00 a 22:00 todos los
-días), el mapa y el enlace para pedir a domicilio, y se lee en castellano, euskera e inglés.
+Erregeordea kalea, 4). Enseña la tienda y los productos, da el horario (de 11:00 a 22:00 todos
+los días), pone el mapa y enlaza con el pedido a domicilio. Se lee en castellano, euskera e
+inglés.
 
 **Verla funcionando:** <https://onigiri-edorin.pages.dev>
 
 ## Cómo está hecha
 
-Es HTML, CSS y JavaScript escritos a mano. No hay frameworks ni librerías de ningún tipo: la
-página son tres ficheros propios (`index.html`, `css/styles.css` y `js/app.js`) y las imágenes.
+Todo el código es propio: `index.html`, `css/styles.css` y `js/app.js`, sin frameworks ni
+librerías, y las imágenes.
 
-Lo que más cuidado tuvo:
+Hay dos tipografías, M PLUS Rounded 1c para los titulares y Plus Jakarta Sans para el texto, y
+las dos viajan con la web en lugar de pedirse al CDN de Google (licencia SIL Open Font License
+1.1). Es una decisión de privacidad, porque así no se envía la IP del visitante a un tercero, y
+también de velocidad. Las fotos se preparan en AVIF y WebP, con un JPG de respaldo, y en varios
+anchos para que cada pantalla descargue la que necesita.
 
-- **Las tipografías se sirven desde la propia web**, no desde el CDN de Google. Son dos, M PLUS
-  Rounded 1c para los titulares y Plus Jakarta Sans para el texto, ambas con licencia SIL Open
-  Font License 1.1. Así no se manda la IP del visitante a un tercero y la página carga antes.
-- **Imágenes ligeras y a su medida.** Cada foto se prepara en AVIF y WebP, con un JPG de
-  respaldo, y en varios anchos; el navegador elige la que le corresponde con `<picture>`.
-- **Datos estructurados** de tipo `Restaurant`, con dirección, tipo de cocina y horario, para
-  que los buscadores puedan leer bien el negocio.
-- **Sin analítica ni scripts de terceros.** En el navegador solo se guardan preferencias del
-  visitante, como el idioma o si quiere ver movimiento.
-- **Respeta el «reducir movimiento»** que el visitante tenga activado en su sistema, y hay
-  además un botón para encender o apagar las animaciones.
-- El mapa es un `<iframe>` de Google Maps. Es de un tercero y, junto con los enlaces, lo único
-  externo que la página toca.
+Para los buscadores, el negocio figura como `Restaurant` en datos estructurados, con su
+dirección, su tipo de cocina y su horario.
+
+La página no usa analítica ni scripts de terceros, y de las preferencias del visitante solo
+recuerda el idioma y si quiere movimiento. Las animaciones se detienen si el sistema pide
+«reducir movimiento», y un botón permite encenderlas o apagarlas a mano. Lo único que se carga
+de otro servidor es el mapa, un `<iframe>` de Google Maps.
 
 ## Estado de los datos
 
