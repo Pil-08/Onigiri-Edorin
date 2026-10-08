@@ -35,6 +35,7 @@ sustituirla.
 Las fotografías proceden de la ficha de Google Maps del negocio y de su Instagram. De algunas
 consta que las subió el propio negocio; de otras no se ha podido comprobar la autoría. Falta que
 el negocio confirme por escrito los derechos de uso, así que no se ofrecen para reutilizarlas.
+La foto de la tarjeta «Inari» la envió el propio negocio en octubre de 2026.
 
 ## Créditos
 
